@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>AJAX Interactions Benjamin Fondell</title>
+    
+    </head>
+    <body>
+        <p>
+            <fieldset>
+                <legend>Input</legend>
+                <form>
+                     <div>
+                        <input type=radio name="input_radio" id="city_button" value="city" checked>
+                        City: 
+                        <input type=text id="userCity">
+                    </div>
+                    <div>
+                        <input type=radio name="input_radio" id="z" value="zip" >
+                        Zip Code: 
+                        <input type=text id="userZip" maxlength="5" size="10">
+                    </div>
+                   <input type="submit" id="weather" value="Check The Weather">
+                </form>
+            </fieldset>
+        </p>
+        <p>
+            <fieldset>
+                <legend>Weather</legend>
+                 <div id="result_output">
+                    <table id="result_table">
+                        <tr>
+                                <td>City:</td>
+                                <td id="name"</td>
+                        </tr>
+                        <tr>
+                                <td>Temperature:</td>
+                                <td id="temp"</td>
+                        </tr>
+                        <tr>
+                                <td>Weather:</td>
+                                <td id="description"</td>
+                        </tr>
+                        <tr>
+                                <td>Humidity:</td>
+                                <td id="humidity"</td>
+                        </tr>
+                        <tr>
+                                <td>Wind Speed:</td>
+                                <td id="wind"</td>
+                        </tr>
+                        <tr>
+                                <td>Sunrise:</td>
+                                <td id="sunrise"</td>
+                        </tr>
+                        <tr>
+                                <td>Sunset:</td>
+                                <td id="sunset"</td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+        </p>    
+        
+        <script src="script.js"></script> 
+    </body>
+    <body>
+            <p>
+                <fieldset>
+                <legend>Post</legend>
+                    <form>
+                        <label>City:
+                            <input type="text" name="city" id="city" size="20">
+                        </label>
+                        <br>
+
+                        <label>Temperature:
+                            <input type="text" name="temperature" id="temperature" size="10">
+                        </label>
+                        <br>
+
+                        <label>Description:
+                            <input type="text" name="weather" id="weather" size="40" placeholder="Rain,Sun,Snow,Wind...">
+                        </label>
+                        <br>
+                        <button type="submit" id="submitpost">Post Submit</button>
+                    </form>
+                </fieldset>
+            </p>
+            <div id="form_response"></div>
+        <script src="postscript.js"></script>
+    </body>
+</html>

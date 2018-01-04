@@ -1,0 +1,35 @@
+<h1>Recieved a Post request</h1>
+{{#if queryString.length}}
+	<fieldset>
+		<legend>Contents: Query String</legend>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Value</th>
+			</tr>
+			{{#each queryString}}
+				<tr>
+					<td>{{this.name}}</td>
+					<td>{{this.value}}</td>
+				</tr>
+			{{/each}}
+		</table>
+	</fieldset>
+{{/if}}
+{{#if body.length}}
+	<fieldset>
+		<legend>Contents: Body</legend>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Value</th>
+			</tr>
+			{{#each body}}
+				<tr>
+					<td>{{this.name}}</td>
+					<td>{{this.value}}</td>
+				</tr>
+			{{/each}}
+		</table>
+	</fieldset>}
+{{/if}}

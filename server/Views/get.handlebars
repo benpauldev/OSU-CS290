@@ -1,0 +1,15 @@
+<h1>Recieved a Get Request</h1>
+<table>
+	{{#if dataString.length}}
+		<tr>
+			<th>Name</th>
+			<th>value</th>
+		</tr>
+	{{/if}}
+	{{#each dataString}}
+		<tr>
+			<td>{{this.name}}</td>
+			<td>{{this.value}}</td>
+		</tr>
+	{{/each}}
+</table>
